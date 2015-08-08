@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Calculate {
 	
 	public static void main(String[] args){
-		float res = 0.f;
+
+		float res = 0.f;	
 		float first = 0.f;
 		float second = 0.f;
 		String ToC = "";
