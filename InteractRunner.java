@@ -14,7 +14,7 @@ public class InteractRunner{
 			String first = reader.next();
 			System.out.println("Enter second arg : ");
 			String second = reader.next();
-			calc.grade(Integer.valueOf(first), Integer.valueOf(second));
+			calc.grade(Float.valueOf(first), Float.valueOf(second));
 			System.out.println("Result : " + calc.getResult());
 			calc.cleanResult();
 			System.out.println("Exit : yes/no ");

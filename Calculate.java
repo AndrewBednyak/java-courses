@@ -38,7 +38,7 @@ public class Calculate {
 					System.out.println(first + " / " + second + " = ...");
 					break;		
 		case "ST":	
-					res = (int)Math.pow(first, second);
+					res = (float)Math.pow(first, second);
 					System.out.println(first + " ^ " + second + " = ...");
 					break;						
 		default:  	System.out.println("Error! Wrong action!");break;

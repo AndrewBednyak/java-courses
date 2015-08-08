@@ -5,21 +5,21 @@ public class Calculator {
 /*
 	Результат вычисления
 */
-private int result;
+private float result;
 
 /*
 	Суммируем аргументы
 	@param params Аргументы суммирования
 */	
-public void add(int ... params){
-	for(Integer param: params){
+public void add(float ... params){
+	for(Float param: params){
 		this.result += param;
 	}
 }
 
-public void sub(int ... params){
-	int a[] = new int[2];
-	for(Integer param: params){
+public void sub(float ... params){
+	float a[] = new float[2];
+	for(Float param: params){
 		for(int i = 0; i<params.length; i++){
 		a[i] = params[i];
 		}
@@ -27,18 +27,18 @@ public void sub(int ... params){
 	}
 }
 
-public void mult(int ... params){
-	int a[] = new int[2];
-	for(Integer param: params){
+public void mult(float ... params){
+	float a[] = new float[2];
+	for(Float param: params){
 		for(int i = 0; i<params.length; i++){
 		a[i] = params[i];
 		}
 		this.result = a[0] * a[1];
 	}
 }	
-public void div(int ... params){
-	int a[] = new int[2];
-	for(Integer param: params){
+public void div(float ... params){
+	float a[] = new float[2];
+	for(Float param: params){
 		for(int i = 0; i<params.length; i++){
 		a[i] = params[i];
 		}
@@ -46,20 +46,20 @@ public void div(int ... params){
 	}	
 }
 
-public void grade(int ... params){
-	int a[] = new int[2];
-	for(Integer param: params){
+public void grade(float ... params){
+	float a[] = new float[2];
+	for(Float param: params){
 		for(int i = 0; i<params.length; i++){
 		a[i] = params[i];
 		}
-		this.result = a[0] ^ a[1];
+		this.result = (float)Math.pow(a[0], a[1]);
 	}	
 }
 /*
 	Получить результат.
 	@return результат вычисления.
 */
-public int getResult(){
+public float getResult(){
 	return this.result;
 }
 /*
