@@ -16,6 +16,12 @@ public void add(int ... params){
 		this.result += param;
 	}
 }
+
+public void sub(int ... params){
+	for(Integer param: params){
+		
+	}
+}
 /*
 	Получить результат.
 	@return результат вычисления.

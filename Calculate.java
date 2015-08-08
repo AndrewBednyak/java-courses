@@ -18,25 +18,29 @@ public class Calculate {
 		second = sc.nextFloat();
 		}
 		
-		System.out.println("Enter type of calculating ([S]umm/[R]azn/[P]roizv/[C]hast):");
+		System.out.println("Enter type of calculating ([S]umm/[R]azn/[P]roizv/[C]hast/[ST]epen):");
 		if(sc1.hasNext()){
 		switch(ToC = sc1.next()){
 		case "S":	
 					res = first + second;
-					System.out.println("Summ...");
+					System.out.println(first + " + " + second + " = ...");
 					break;
 		case "R":	
 					res = first - second;
-					System.out.println("Razn...");
+					System.out.println(first + " - " + second + " = ...");
 					break;
 		case "P":	
 					res = first * second;
-					System.out.println("Proizv...");
+					System.out.println(first + " * " + second + " = ...");
 					break;
 		case "C":	
 					res = first / second;
-					System.out.println("Chast...");
-					break;			
+					System.out.println(first + " / " + second + " = ...");
+					break;		
+		case "ST":	
+					res = first / second;
+					System.out.println(first + " ^ " + second + " = ...");
+					break;						
 		default:  	System.out.println("Error! Wrong action!");break;
 			}
 		}
