@@ -11,9 +11,13 @@ private float result;
 	Суммируем аргументы
 	@param params Аргументы суммирования
 */	
-public void add(float ... params){
+public void summ(float ... params){
+	float a[] = new float[2];
 	for(Float param: params){
-		this.result += param;
+		for(int i = 0; i<params.length; i++){
+		a[i] = params[i];
+		}
+		this.result = a[0] + a[1];
 	}
 }
 
